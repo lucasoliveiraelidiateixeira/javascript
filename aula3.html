@@ -26,6 +26,7 @@
     <p id="ex1">alterar texto do "menu 1" para item 1</p>
     <p id="ex2">alterar o texto do "menu 2" para item 2 atraves da tag</p>
     <p id="ex3">inserir parenteses () nos comandos das clasess "comandos"</p>
+    <p id="ex4">alterar a cor do id "ex1", e do segundo item da classe comando para verde</p>
 
   </div>
   <script>
@@ -34,7 +35,8 @@
     document.getElementsByClassName('comandos')[0].innerHTML+ "()";
     document.getElementsByClassName('comandos')[1].innerHTML = document.getElementsByClassName('comandos')[1].innerHTML+ "()";
     document.getElementsByClassName('comandos')[2].innerHTML = document.getElementsByClassName('comandos')[2].innerHTML+ "()";
-
+    document.getElementById('ex1').style.color = "green";
+    document.getElementsByClassName('comandos')[1].style.color = "green";
 
   </script>
 </body>
