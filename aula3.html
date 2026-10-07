@@ -25,11 +25,16 @@
   <div>
     <p id="ex1">alterar texto do "menu 1" para item 1</p>
     <p id="ex2">alterar o texto do "menu 2" para item 2 atraves da tag</p>
+    <p id="ex3">inserir parenteses () nos comandos das clasess "comandos"</p>
 
   </div>
   <script>
     document.getElementsByTagName('p')[0].innerHTML = "item 1";
     document.getElementsByTagName('p')[1].innerHTML = "item 2";
+    document.getElementsByClassName('comandos')[0].innerHTML+ "()";
+    document.getElementsByClassName('comandos')[1].innerHTML = document.getElementsByClassName('comandos')[1].innerHTML+ "()";
+    document.getElementsByClassName('comandos')[2].innerHTML = document.getElementsByClassName('comandos')[2].innerHTML+ "()";
+
 
   </script>
 </body>
