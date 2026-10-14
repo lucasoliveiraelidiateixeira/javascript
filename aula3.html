@@ -4,13 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <nav>
-    <p>menu 1</p>
-    <p>menu 2</p>
-    <p>menu 3</p>
-  </nav>
 </head>
 <body>
+   <header>
+    <nav>
+      <p>Menu 1</p>
+      <p>Menu 2</p>
+      <p>Menu 3</p>
+    </nav>
+  </header>
+  <button>Ocultar div</button>
+  <button>Mostrar div</button>
   <main>
     <h2 id="titulo">aula 3 - javascript dom</h2>
     <p class="comandos">getEelementById</P>
@@ -32,6 +36,7 @@
     <p id="ex7">7 -alterar o texto para negrito do elemento da primeira classse "comandos" utilizando querySelector.</p>
     <p id="ex8">alterar a div: arredondar as bordas, cor do fundo rosa claro, cor de texto vermelho</p>
     <p id="ex9">9 - Alterar os exercícios 1 e 2 para variáveis.</p>
+    <p id="ex10">10 - Colocar os botões para funcionar</p>
 
   </div>
   <script>
@@ -55,6 +60,16 @@
     document.querySelector('div').style.borderRadius = "30px";
     document.querySelector('div').style.backgroundColor = "lightpink";
     document.querySelector('div').style.color = "red";
+
+     //10
+    //botão 1
+    document.querySelectorAll("button")[0].addEventListener("click" , function() {
+      document.querySelectorAll("div")[0].style.display = "none";
+    });
+    //botão 2
+    document.querySelectorAll("button")[1].addEventListener("click" , function() {
+      document.querySelectorAll("div")[0].style.display = "block";
+    });
 
 
   </script>
