@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeria de Imagens</title>
+</head>
+<body>
+  <h1>Minha Galeria de Imagens</h1>
+  <h3>Clique em uma imagem:</h3>
+  <img src="https://picsum.photos/id/10/120/100" width="120" onclick="mostrarImagem(10, 'Floresta')">
+  <img src="https://picsum.photos/id/20/120/100" width="120" onclick="mostrarImagem(20, 'Montanha')">
+  <img src="https://picsum.photos/id/30/120/100" width="120" onclick="mostrarImagem(30, 'Natureza')">
+  <hr>
+  <h2 id="nome">Nenhuma imagem selecionada</h2>
+  <img id="imagemGrande" width="400">
+
+<script>
+    function mostrarImagem(id, nome) {
+      let imagem = document.getElementById("imagemGrande");
+      imagem.setAttribute("src",
+        "https://picsum.photos/id/" + id + "/400/300");
+      document.getElementById("nome").textContent = nome;
+    }
+  </script>
+</body>
+</html>
